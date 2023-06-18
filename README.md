@@ -1,7 +1,7 @@
-# Social Network API
+# PWA Text Editor
 
 ## Description
-This is an API for a social network web application where users can share their thoughts, react to friends' thoughts, and create a friend list. It is built using Express.js for routing, MongoDB for the database, and Mongoose as the ODM. The API provides various routes to perform CRUD operations on users, thoughts, reactions, and friendships.
+This is a project for building a text editor that runs in the browser. The application is designed as a single-page application that fulfills the criteria of a Progressive Web Application (PWA). It incorporates various data persistence techniques to ensure offline functionality. The key aspect of the application is implementing methods to store and retrieve data using an IndexedDB database. To achieve this, the `idb` package is utilized.
 
 ## Table of Contents
 - [Usage](#usage)
@@ -10,27 +10,31 @@ This is an API for a social network web application where users can share their 
 - [Access](#access)
 
 ## Usage
-- The server can be launched with the following command
-```
-node server.js
-```
-- The APIs can be tested in Postman
+To run the text editor, use the following steps:
 
-![user experience](./images/apicheck.png)
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install the required dependencies using the command `npm install`.
+4. Launch the application by running `npm run start:dev`.
+5. Access the text editor in your browser.
 
+The text editor allows you to create and edit text content. It automatically saves the content using IndexedDB, ensuring data persistence even when offline.
+
+![User Experience](./images/userexperience.png)
 
 ## Credits
-This API was developed as a project for the NoSQL module of a coding bootcamp. 
+This text editor project was based on this [starter code](https://github.com/coding-boot-camp/cautious-meme).
 
 ## Features
-The Social Network API provides the following features:
+The text editor offers the following features:
 
-- User management: Create, update, delete, and retrieve users.
-- Thought management: Create, update, delete, and retrieve thoughts.
-- Reaction management: Create and delete reactions to thoughts.
-- Friendship management: Add and remove friends from a user's friend list.
+- Browser-based text editor.
+- Progressive Web Application (PWA) functionality.
+- IndexedDB integration for data storage and retrieval.
+- Offline functionality.
 
 ## Access
-[Click to View Repository](https://github.com/johnpow/social-network-api)
+You can access the repository and view the deployed app for the text editor project through the following links:
 
-[Click for the Video Walkthrough](https://drive.google.com/file/d/1Yi6w56-xoeKDSSdiM-3wLsbgUblhmjzt/view)
+- [Click to View Repository](https://github.com/johnpow/pwa-text-editor)
+- [Click for the Deployed Heroku App](https://johnpow-text-editor-6d40d1083695.herokuapp.com/)

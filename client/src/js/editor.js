@@ -36,7 +36,7 @@ export default class {
       }
     
       this.editor.setValue(initialValue);
-      console.info('success');
+
     });
 
     this.editor.on('change', () => {
